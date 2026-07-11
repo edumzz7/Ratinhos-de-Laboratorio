@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #000000;
+  --color-brand-card: #0a0f1e;
+  --color-brand-card-light: #181d2c;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-alt: #C5A059;
+  --color-brand-text: #E0E0E0;
+  --color-brand-text-muted: #A0A0A0;
+
+  --font-sans: "Inter", "Geist", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-bg);
+    color: var(--color-brand-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-text-fill-color: var(--color-brand-text);
+    caret-color: var(--color-brand-text);
+    -webkit-box-shadow: 0 0 0px 1000px #090d18 inset;
+    box-shadow: 0 0 0px 1000px #090d18 inset;
+    transition: background-color 9999s ease-in-out 0s;
+  }
+}
